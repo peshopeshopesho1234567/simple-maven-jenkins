@@ -11,6 +11,7 @@ public class App {
         PropertyConfigurator.configure(App.class.getClassLoader()
             .getResource("log4j.properties"));
         NASARetriever retriever = new NASARetriever();
+	System.out.format("Testing the jenkins-maven build!!! %s", "Hooraaay");
         try {
             retriever.retrieve();
         } catch (Exception e) {
